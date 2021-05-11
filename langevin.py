@@ -25,4 +25,4 @@ nH=1001   # number of H points
 with open('l4test.dat', 'w') as f:
     for i in range(0,nH):
         H=Hmin+i*(Hmax-Hmin)/(nH-1)
-        print(H,Bs*langevin(3*mu_r*mu0*H/Bs),file=f)
+        print(Bs*langevin(3*mu_r*mu0*H/Bs),H,file=f)
